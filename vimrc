@@ -75,7 +75,7 @@ if has("unix")
     noremap <Leader><Leader> :call system('wmctrl -i -b toggle,maximized_vert,maximized_horz -r '.v:windowid)<CR>
 
     set dictionary=-/usr/share/dict/words dictionary+=/usr/share/dict/words
-    map <C-e> :silent !nautilus %:p:h<CR>
+    map <C-e> :silent !caja %:p:h<CR>
 endif
 
 autocmd FileType javascript :set tw=118
