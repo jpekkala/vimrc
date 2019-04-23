@@ -4,6 +4,7 @@ filetype off
 set rtp+=~/.vim/bundle/Vundle.vim
 call vundle#begin()
 Plugin 'VundleVim/Vundle.vim'
+Plugin 'posva/vim-vue'
 Plugin 'tpope/vim-surround'
 Plugin 'leafgarland/typescript-vim'
 Plugin 'pangloss/vim-javascript'
@@ -83,6 +84,6 @@ autocmd FileType html :set tw=0
 filetype plugin indent on
 
 " adds AngularJS $inject above a function declaration
-command Inject execute 'normal yyP^dawdaw' | .s/\<\([a-zA-Z_$]*\)\>/'\1'/g | .s/(/[/ | .s/)\s*{$/];/ | nohl | normal Pwi.$inject = <ESC> 
+command Inject execute 'normal yyP^f(bd^daw' | .s/\<\([a-zA-Z_$]*\)\>/'\1'/g | .s/(/[/ | .s/)\s*{$/];/ | nohl | normal Pwi.$inject = <ESC> 
 
 autocmd BufEnter * lcd %:p:h
