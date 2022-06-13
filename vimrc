@@ -12,7 +12,7 @@ Plugin 'leafgarland/typescript-vim'
 Plugin 'pangloss/vim-javascript'
 Plugin 'ctrlpvim/ctrlp.vim'
 let g:ctrlp_by_filename = 1
-Plugin 'tomtom/tlib_vim'
+"Plugin 'tomtom/tlib_vim'
 call vundle#end()
 
 " WHITESPACE
